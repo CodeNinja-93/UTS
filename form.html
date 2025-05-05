@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      margin-top: 5px;
+    }
+
+    .radio-group input,
+    .checkbox-group input {
+      margin-right: 8px;
+    }
+
+    .button-group {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .button-group input {
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button-group input[type="submit"] {
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    .button-group input[type="reset"] {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .button-group input:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Pendaftaran</h2>
+  <form method="post" action="proses.php">
+    <label for="nama">Nama</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="jk">Jenis Kelamin</label>
+    <select id="jk" name="jk" required>
+      <option value="">-- Pilih --</option>
+      <option value="Laki-Laki">Laki-Laki</option>
+      <option value="Perempuan">Perempuan</option>
+    </select>
+
+    <label>Agama</label>
+    <div class="radio-group">
+      <label><input type="radio" name="agama" value="Islam" required> Islam</label>
+      <label><input type="radio" name="agama" value="Katholik"> Katholik</label>
+      <label><input type="radio" name="agama" value="Protestan"> Protestan</label>
+      <label><input type="radio" name="agama" value="Hindu"> Hindu</label>
+      <label><input type="radio" name="agama" value="Budha"> Budha</label>
+    </div>
+
+    <label>Hobby</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="hobby[]" value="Browsing"> Browsing</label>
+      <label><input type="checkbox" name="hobby[]" value="Game"> Game</label>
+      <label><input type="checkbox" name="hobby[]" value="Olah Raga"> Olah Raga</label>
+    </div>
+
+    <label for="alamat">Alamat</label>
+    <textarea id="alamat" name="alamat" rows="4"></textarea>
+
+    <div class="button-group">
+      <input type="submit" value="Kirim">
+      <input type="reset" value="Batal">
+    </div>
+  </form>
+
+</body>
+</html>

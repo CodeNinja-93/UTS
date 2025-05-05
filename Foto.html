@@ -1,0 +1,212 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+    <style>
+      body {
+      background-color: #A5D6A7;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    table {
+      width: 12vw; /* 12% dari lebar layar (viewport) */
+      border-collapse: collapse;
+      background-color: #3A6351;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    td {
+      padding: 5px 6px;
+      text-align: center;
+      font-size: 0.7em;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+
+    tr:nth-child(1),
+    tr:nth-child(2) {
+      font-weight: bold;
+    }
+   </style>
+</head>
+<body> -->
+
+    <!-- <h2>Kelompok ARV</h2>
+    <ul>
+      <li>Muhammad Viki Rahman</li>
+      <li>Rizky Syahputra</li>
+      <li>Agil Sammy Aldo</li>
+      <li>Desy Ramadhani Lubis</li>
+    </ul>
+  
+    <h1>Di atas adalah nama-nama kelompok kami dan di bawah ini adalah pengenalan diri kami untuk melengkapi web tersebut</h1>
+  
+    <div class="profile">
+      <ul>
+        <li>Nama : Muhammad Viki Rahman</li>
+        <li>NPM  : 24451034</li>
+        <li>Prodi: Teknik Informatika</li>
+      </ul>
+      <img src="Viki.jpg" height="200">
+    </div>
+  
+    <div class="profile">
+      <ul>
+        <li>Nama : Rizky Syahputra</li>
+        <li>NPM  : 24451072</li>
+        <li>Prodi: Teknik Informatika</li>
+      </ul>
+      <img src="Rizky.jpg" height="200">
+    </div>
+  
+    <div class="profile">
+      <ul>
+        <li>Nama : Agil Sami Aldo</li>
+        <li>NPM  : 24451070</li>
+        <li>Prodi: Teknik Informatika</li>
+      </ul>
+      <img src="Agil.jpg" height="200">
+    </div>
+
+    <div class="profile">
+      <ul>
+        <li>Nama : Desy Ramadhani Lubis </li>
+        <li>NPM  : 23455016</li>
+        <li>Prodi: Teknik INformatika</li>
+      </ul>
+      <img src="Desy.jpg" height="200">
+    </div> -->
+
+    <!-- <table>
+      <tr>
+        <td>AGIL ALDO</td>
+        <td>VIKI RAHMAN</td>
+        <td>RIZKY SYAHPUTRA</td>
+        <td>DESY</td>
+      </tr>
+      <tr>
+        <td>24451005</td>
+        <td>24451033</td>
+        <td>24451015</td>
+        <td>2447081</td>
+      </tr>
+      <tr>
+        <td><img src="Agil.jpg" alt="Agil"></td>
+        <td><img src="Viki.jpg" alt="Viki"></td>
+        <td><img src="Rizky.jpg" alt="Rizky"></td>
+        <td><img src="image/novi.jpg" alt="Novi"></td>
+      </tr>
+    </table> -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri Foto</title>
+  <style>
+    * {
+      font-family: arial, sans-serif;
+    }
+
+    #h2 {
+      text-align: center; 
+      margin-top: 7px; 
+      margin-bottom: 7px; 
+      color: #1a5276;
+    }
+    
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #dceefb; /* warna latar belakang lembut */
+    }
+
+    .galeri {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 100%;
+    }
+
+    .anggota {
+      text-align: center;
+    }
+
+    .anggota img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #4CAF50;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .anggota img:hover {
+      transform: scale(1.2);
+    }
+
+    .nama {
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    .nim {
+      font-size: 0.8em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="h2">KELOMPOK KAMI</h2>
+
+  <div class="galeri">
+    <div class="anggota">
+      <img src="Agil.jpg" alt="Agil">
+      <div class="nama">AGIL ALDO</div>
+      <div class="nim">24451070</div>
+    </div>
+    <div class="anggota">
+      <img src="Viki.jpg" alt="Viki">
+      <div class="nama">MUHAMMAD VIKI</div>
+      <div class="nim">24451034</div>
+    </div>
+    <div class="anggota">
+      <img src="Rizky.jpg" alt="Rizky">
+      <div class="nama">RIZKY SYAHPUTRA</div>
+      <div class="nim">24451072</div>
+    </div>
+    <div class="anggota">
+      <img src="desy.jpeg" alt="Desy">
+      <div class="nama">DESY RAMADHANI</div>
+      <div class="nim">23455016</div>
+    </div>
+  </div>
+</body>
+</html>
+
+  
+  <!-- </body>
+  
+</html> -->
