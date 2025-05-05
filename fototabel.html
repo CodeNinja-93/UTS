@@ -116,97 +116,108 @@
       </tr>
     </table> -->
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Galeri Foto</title>
-  <style>
-    * {
-      font-family: arial, sans-serif;
-    }
-
-    #h2 {
-      text-align: center; 
-      margin-top: 7px; 
-      margin-bottom: 7px; 
-      color: #1a5276;
-    }
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+      <meta charset="UTF-8">
+      <title>Galeri Foto</title>
+      <style>
+        * {
+          font-family: arial, sans-serif;
+        }
     
-    body {
-      margin: 0;
-      padding: 10px;
-      font-family: Arial, sans-serif;
-      background-color: #dceefb; /* warna latar belakang lembut */
-    }
-
-    .galeri {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      height: 100%;
-    }
-
-    .anggota {
-      text-align: center;
-    }
-
-    .anggota img {
-      width: 60px;
-      height: 60px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid #4CAF50;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s;
-    }
-
-    .anggota img:hover {
-      transform: scale(1.2);
-    }
-
-    .nama {
-      font-weight: bold;
-      font-size: 0.9em;
-      margin-top: 5px;
-    }
-
-    .nim {
-      font-size: 0.8em;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
-  <h2 id="h2">ANGGOTA KELOMPOK</h2>
-
-  <div class="galeri">
-    <div class="anggota">
-      <img src="Agil.jpg" alt="Agil">
-      <div class="nama">AGIL ALDO</div>
-      <div class="nim">24451070</div>
-    </div>
-    <div class="anggota">
-      <img src="Viki.jpg" alt="Viki">
-      <div class="nama">MUHAMMAD VIKI</div>
-      <div class="nim">24451034</div>
-    </div>
-    <div class="anggota">
-      <img src="Rizky.jpg" alt="Rizky">
-      <div class="nama">RIZKY SYAHPUTRA</div>
-      <div class="nim">24451072</div>
-    </div>
-    <div class="anggota">
-      <img src="desy.jpeg" alt="Desy">
-      <div class="nama">DESY RAMADHANI</div>
-      <div class="nim">23455016</div>
-    </div>
-  </div>
-</body>
-</html>
-
-  
-  <!-- </body>
-  
-</html> -->
+        #h2 {
+          text-align: center; 
+          margin-top: 7px; 
+          margin-bottom: 7px; 
+          color: #1a5276;
+        }
+        
+        body {
+          margin: 0;
+          padding: 10px;
+          font-family: Arial, sans-serif;
+          background-color: #f4f6f8; /* warna latar belakang lembut */
+        }
+    
+        .galeri {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            max-width: 700px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          /* display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          height: 100%; */
+        }
+    
+        .anggota {
+          text-align: center;
+        }
+    
+        .anggota img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 2px solid #4CAF50;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s;
+        }
+    
+        .anggota img:hover {
+          transform: scale(1.2);
+        }
+    
+        .nama {
+          font-weight: bold;
+          font-size: 1em;
+          margin-top: 5px;
+          padding: 20px;
+        }
+    
+        .nim {
+          font-size: 0.9em;
+          color: #555;
+        }
+      </style>
+    </head>
+    <body>
+      <h2 id="h2">ANGGOTA KELOMPOK</h2>
+    
+      <div class="galeri">
+        <div class="anggota">
+          <img src="Agil.jpg" alt="Agil">
+          <div class="nama">AGIL ALDO</div>
+          <div class="nim">24451070</div>
+        </div>
+        <div class="anggota">
+          <img src="Viki.jpg" alt="Viki">
+          <div class="nama">MUHAMMAD VIKI</div>
+          <div class="nim">24451034</div>
+        </div>
+        <div class="anggota">
+          <img src="Rizky.jpg" alt="Rizky">
+          <div class="nama">RIZKY SYAHPUTRA</div>
+          <div class="nim">24451072</div>
+        </div>
+        <div class="anggota">
+          <img src="desy.jpeg" alt="Desy">
+          <div class="nama">DESY RAMADHANI</div>
+          <div class="nim">23455016</div>
+        </div>
+      </div>
+    </body>
+    </html>
+    
+      
+      <!-- </body>
+      
+    </html> -->
